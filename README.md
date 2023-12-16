@@ -1,6 +1,10 @@
 # Overview:
 The Python Substring Search Script is a powerful tool designed to effortlessly search through the contents of an Amazon S3 bucket, providing users with a versatile and efficient means of locating specific substrings. This script combines simplicity with advanced search functionalities, allowing for case-insensitive searches, exact word matches, and even the ability to search for entire phrases within the stored data.
 
+<h3>Demo</h3>
+[![](https://img.youtube.com/vi/VyWTanhWRCY/0.jpg)](https://www.youtube.com/watch?v=VyWTanhWRCY)
+
+
 <h3>Key Features:</h3>
 
 <h4>Case-Insensitive Search:</h4>
