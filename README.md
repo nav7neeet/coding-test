@@ -1,10 +1,6 @@
 # Overview:
 The Python Substring Search Script is a powerful tool designed to effortlessly search through the contents of an Amazon S3 bucket, providing users with a versatile and efficient means of locating specific substrings. This script combines simplicity with advanced search functionalities, allowing for case-insensitive searches, exact word matches, and even the ability to search for entire phrases within the stored data.
 
-<h3>Demo</h3>
-[![](https://img.youtube.com/vi/VyWTanhWRCY/0.jpg)](https://www.youtube.com/watch?v=VyWTanhWRCY)
-
-
 <h3>Key Features:</h3>
 
 <h4>Case-Insensitive Search:</h4>
@@ -35,6 +31,7 @@ pip3 install -r requirements.txt
 
 <h4>AWS Authentication:</h4>
 Configure the AWS CLI Credentials or use short lived credentials from AWS SSO <br> 
+  
   - https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-short-term.html <br>
   - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
@@ -43,6 +40,17 @@ Use the intuitive CLI to input search parameters, specifying the substring and d
 
 ```
 python3 find-substring.py -b <s3-bucket-name> -s <substring>
+
+options:
+  -h, --help            show this help message and exit
+  -b BUCKET, --bucket BUCKET
+                        Amazon s3 bucket name
+  -s SUBSTRING, --substring SUBSTRING
+                        search string
+  -i {true,false}, --case {true,false}
+                        case-sensitive match
+  -e {true,false}, --exact {true,false}
+                        exact word match
 ```
 
 <h4>Review Results:</h4>
